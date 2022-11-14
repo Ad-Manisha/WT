@@ -1,2 +1,2 @@
 # WT
-Web Technology
+Web-Technology
