@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+}
+.container button{
+    background-color:white;
+    color:#050200;
+    padding:10px 40px;
+    font-size: 25px;
+    border-radius: 1px; 
+    font-family:sans-serif;
+    margin-bottom:30px;
+    margin-right:70px; 
+}
+#btn1{
+    border-style: dotted;
+}
+#btn2{
+    border-style: 1px solid rgba(7, 5, 5, 0.87);
+    padding:10px 48px 10px 50px;
+}
+#btn3{
+    border-style:groove;
+    border-color: rgb(204, 202, 202);
+    padding-right:35px;
+}
+#btn4{
+    border-style:inset;
+    border-width: 2.5px;
+    border-color: rgb(207, 206, 206);
+    padding-right:55px;
+}
+#btn5{
+    border-style: dashed;
+    padding-right: 30px;
+}
+#btn6{
+    border-style: double; 
+    border-color: rgb(7, 1, 1)
+}
+#btn7{
+    border-style: ridge;
+    border-color: darkgrey;
+    padding-right: 60px;
+}
+#btn8{
+    border-style: outset;
+    border-color: darkgrey;
+    padding-right:48px;
+
+}
