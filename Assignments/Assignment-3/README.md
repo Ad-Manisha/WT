@@ -8,7 +8,22 @@
  - groove return
  - rige  return  
  - dashed  return
- - dotted  return
+ - dotted  return  
+  <pre>
+  
+  
+  </pre>
+  
+  
+  
+  ![Screenshot](https://github.com/Ad-Manisha/WT/blob/main/Assignments/Assignment-3/assets/buttons-screenshot.png)
+  <pre>
+  
+  
+  </pre>
+  ![Screenshot](https://github.com/Ad-Manisha/WT/blob/main/Assignments/Assignment-3/assets/border-screenshot.png)
+
+  
  
 
  
