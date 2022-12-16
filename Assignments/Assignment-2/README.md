@@ -2,15 +2,15 @@
 
 ### Text Properties :  
 
-1.color
-2.line-height
-3.text-decoration
-    -font
-    -underline 
+1.color  
+2.line-height  
+3.text-decoration  
+    -font  
+    -underline   
     -``strike``
     -_italic_
-4.letter-spacing
-7.text-align  
+4.letter-spacing  
+7.text-align   
 
 
 
