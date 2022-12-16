@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero_Section</title>
+    <style>
+        body{
+            margin: 0;
+           
+        }
+        .navbar{
+            overflow: hidden;
+        }
+        .nav-bar a{
+            float:left;
+            text-align: center;
+            padding:14px 16px;
+            text-decoration:none; 
+            font-size: 15px;
+            position:relative;
+            left:200px;
+            color:rgb(92, 89, 89);
+            font-family:Arial, Helvetica, sans-serif;  
+        }
+        h3{
+            display:inline-block;
+            position:absolute;
+            top:-5px;
+            left:20px;
+            font-family:Arial, Helvetica, sans-serif;
+       }
+      
+       #my-btn{
+            position:absolute;
+            top:8px;
+            right:15px;
+            border: 0.1px solid rgb(218, 206, 206);
+            background-color: white;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            font-size:15px;
+            color:rgb(92, 89, 89);
+            font-family:Arial, Helvetica, sans-serif;
+       }
+       .div1{
+            position:absolute;
+            left:20px;
+            top: 80px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:medium;
+       }
+       #head2{
+            position:absolute;
+            margin-top:-30px;
+
+       }
+       .hero{
+            position: absolute;
+            width:43%;
+            right:20px;
+            left:530px;
+            top:125px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+       }
+       .div2{
+            position: relative;
+            top: 0px;
+       }
+      #my-input{
+            position:relative;
+            left:0px;
+            z-index: 1;
+            padding:9px;
+            font-size: small;
+            height: 15px;
+            width:100%;
+        
+
+       }
+       .div4{
+            position:absolute;
+            font-family:Arial, Helvetica, sans-serif;
+            top: 300px;
+            left:20px;
+       }
+       #my-btn2{
+            position:absolute;
+            left:162px;
+            z-index:2;
+            top:21px;
+            bottom:2px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background-color: rgb(101, 101, 241);
+            color:white;
+            border:none; 
+       }
+       .list{
+            position:relative;
+            top:0px;
+       }
+       .tick{
+            position:relative absolute;
+            top: 180px;
+            left:-30px;
+            height:15px;
+            width:31px;
+       }  
+       .div2{
+        position:absolute;
+        top:180px;
+        left:-26px;
+       }
+
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <h3><b>Brand</b></h3>
+        <a href="#">Home</a>
+        <a href="#">Component</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+        <a href="#">FAQ</a>
+        <button id="my-btn">Contact Us</button>
+    </div>
+
+    <div class="parent">
+        <div class="div1">
+        <h1 id="head1">Easiest way to create</h1>
+        <h1 id="head2">your website</h1>
+        </div>
+        <div class="div2">
+            <ul>
+                <li style="list-style-type: none"><img src=".//Assets/tick.png" class="tick"> and Simple Layout </li><br>
+                <li style="list-style-type: none"><img src=".//Assets/tick.png" class="tick">Just Copy Paste Coding</li><br>
+                <li style="list-style-type: none"><img src=".//Assets/tick.png" class="tick">Easy to use</li>
+            </ul>
+        </div>    
+    </div>
+
+        <div class="div3">
+            <img src=".//Assets/hero.jpg" alt="guy with laptop" class="hero">
+        </div>
+        <div class="div4">
+            <br>
+            <input type="email"placeholder="Enter your email address" id="my-input">
+            <button id="my-btn2">Join Us</button>
+        </div>  
+    
+</body>
+</html>
