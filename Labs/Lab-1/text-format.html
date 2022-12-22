@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Text Formatting Properties</title>
+    <style>
+         h1{
+            background-color: rgb(212, 201, 201);
+        }
+        #head1{
+            text-align:left;
+            line-height:normal;
+            
+        }
+        #head2{
+            text-align: center;
+        }
+        #head3{
+            text-align: right;
+        }
+        #head4{
+            text-align: justify;
+        }
+        th{
+            font-family:Arial;
+        }
+        #under{
+            text-decoration: underline;
+        }
+        #over{
+            text-decoration: overline;
+        }
+        #strike{
+            text-decoration: line-through;
+        }
+        #color{
+            color:crimson;
+            line-height: normal;
+        }
+        .lorem{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 400;
+        }
+        #itallic{
+            font-style: italic;
+        }
+        
+        #normal{
+            line-height: normal;
+        }
+        #less{
+            line-height: 50%;
+        }
+        #more{
+            line-height: 400%;
+        }
+        #space2{
+            letter-spacing: 1px;
+        }
+        #space3{
+            letter-spacing: 5px;
+        }
+        #space1{
+            letter-spacing: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <h1>Text-Align:</h1>
+            <tr>
+                <th >left</th>
+                <th >center</th>
+                <th >right</th>
+                <th>justify</th>  
+            </tr> 
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="lorem"id="head1">
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Quisquam officia esse inventore 
+                    ratione accusantium quis, maiores culpa, 
+                    deserunt fuga ipsam accusamus commodi.
+                </td>
+                <td class="lorem"id="head2">Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Ex laboriosam necessitatibus aliquam 
+                    exercitationem est, eveniet voluptas numquam 
+                    ipsa quam alias quis dolorum.
+                </td>
+                <td class= "lorem"id="head3">Lorem ipsum dolor sit amet, consectetur
+                     adipisicing elit.Deleniti eos voluptatem eius 
+                     recusandae perferendis similiqueconsequuntur 
+                     et iste delectus in. Illo, sequi.
+                </td>
+                <td  class= "lorem"id="head4">
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Quisquam officia esse inventore 
+                    ratione accusantium quis, maiores culpa, 
+                    deserunt fuga ipsam accusamus commodi.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <hr>
+    <h1>Text-Decoration:</h1>
+    <!--sets decorative lines on text-->
+    <h4 id="under">Underline</h4>
+    <h4 id="over">Overline</h4>
+    <h4 id="strike">Line-Through</h4>
+    <p id="color">Use of text colour</p>
+    <p id="itallic">Itallic Text</p>
+    <p><b>This is Bold Text</b></p>
+    <p >The meeting will be held on coming<strong> Sunday.</strong> </p>
+    <p><b>H<sub>2</sub>O</b></p>
+    <p><b>1<sup>st</sup></b>person to climb Mt.Everest are <strong>Emund Hillary </strong>  and <strong>Tenzing Norgey Sherpa </strong></p>
+    <br>
+    <p id="normal"> Line Height:Normal</p>
+    <p id="less">Line Height:50%</p>
+    <p id="more">Line Height:200%</p>
+    <hr>
+    <h1>Letter Spacing:</h1>
+    <p id="space1">Rise To Vote, Sir!</p>
+    <p id="space2">Rise To Vote, Sir!</p>
+    <p id="space3">Rise To Vote, Sir!</p>
+    <hr>
+
+</body>
+</html>

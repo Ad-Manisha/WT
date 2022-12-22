@@ -1,0 +1,73 @@
+body{
+   /* background-color: beige; */
+   background-color: #9CC3D5FF;
+}
+
+header{
+  color:rgb(45, 115, 117)
+}
+
+
+#message{
+    text-align:center; 
+}
+h4{
+    text-align: center;
+    word-spacing: 1px;
+}
+#welcome{
+    position:absolute;
+    left:120px;
+    top: 110px;
+    text-align:left;
+    word-spacing: 1px;;
+}
+   
+.parent1{
+    display:flex;
+    position:relative;
+    top:80px;
+    margin:40px;
+}
+
+.parent2{
+    display:flex;
+    position:relative;
+    top:80px;
+    margin:40px;
+}
+.child1{
+    margin-right: 500px;
+}
+.child3{
+    margin-right: 100px;
+}
+.child4{
+    margin-right: 100px;
+}
+.pics{
+    height:400px;
+    width: 450px;
+    border-radius: 50%;
+}
+
+#video{
+    position:relative;
+    left: 550px;
+    
+}
+
+#my_video{
+    border-radius: 15%;
+    /* border-color: red; */
+    /* border-style: dashed; */
+}
+
+#my-text{
+    color:rgb(170, 96, 240);
+}
+
+#caption{
+    font-size: 24px;
+   
+}

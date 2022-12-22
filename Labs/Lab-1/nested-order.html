@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Ordered list</title>
+    <style>
+        .head-list{
+            list-style:upper-roman;
+        }
+        .sub-head{
+            list-style:upper-alpha
+        }
+        .child-list{
+            list-style-type: lower-roman;
+        }
+        body{
+            background-image: url(".//Assets/GBS/sky.jpg") ;
+            background-size:cover;
+            color:rgb(236, 236, 245);
+            text-align:justify;
+            padding-left:100px;
+            border: 1px solid rgb(228, 178, 14); 
+        }
+        h1{
+            color:rgb(238, 226, 217);
+            text-decoration:underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: left;">Nested  Ordered List</h1><br>
+    <ol>
+        <li class="head-list">Background Skills</li>
+            <ol>
+                <li class="sub-head">Unix Commands</li>
+                <li class="sub-head">Vim Test Editors</li>
+            </ol><br>
+        <li class="head-list">HTML</li>
+        <ol>
+            <li class="sub-head">Minimal Page</li>
+            <li class="sub-head">Headings</li>
+            <li class="sub-head">Elements</li>
+            <li class="sub-head">Lists</li>
+                <ol>
+                    <li class="child-list">Unordered</li>
+                    <li class="child-list">Ordered</li>
+                    <li class="child-list">Definition</li>
+                    <li class="child-list">Nested</li>
+                </ol>
+            <li class="sub-head">Links</li>
+                <ol>
+                    <li class="child-list">Absolute</li>
+                    <li class="child-list">Relative</li>
+                </ol>
+            <li class="sub-head">Images</li>
+        </ol><br>
+        <li class="head-list">CSS</li>
+            <ol>
+                <li class="sub-head">Anatomy</li>
+                <li class="sub-head">Basic Selectors</li>
+                    <ol>
+                        <li class="child-list">Element</li>
+                        <li class="child-list">Class</li>
+                        <li class="child-list">ID</li>
+                        <li class="child-list">Group</li>
+                    </ol>
+                <li class="sub-head">The DOM</li>
+                <li class="sub-head">Advanced Selectors</li>
+                <li class="sub-head">Box Model</li>
+            </ol><br>
+        <li class="head-list">Programming</li>
+            <ol>
+                <li class="sub-head">Python</li>
+                <li class="sub-head">JavaScript</li>
+            </ol>
+            <br>
+        <li class="head-list">Database</li>
+            <ol>
+                <li class="sub-head">Flat File</li>
+                <li class="sub-head">Relational</li>
+            </ol>
+    </ol>
+</body>
+</html>
