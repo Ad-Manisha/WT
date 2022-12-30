@@ -1,0 +1,47 @@
+
+#pic1{
+    position: relative;
+    height:80px;
+    width:80px;
+    left:90px;
+    z-index: auto;
+}
+#pic2{
+  
+    height:60px;
+    position: absolute;
+    width:70px;
+    z-index: 1;
+    left:130px;
+}    
+
+#pic3{
+    height:80px;
+    position: absolute;
+    width:80px;
+    z-index: 1;
+    left:1670px;
+    top:210px
+}
+#pic4{
+    height:80px;
+    position: absolute;
+    width:80px;
+    z-index: 1;
+    left:1690px;
+    top:140px;
+}
+
+.div1{
+    position:absolute;
+    border: 5px solid white;
+    background-color:white;
+    box-shadow: 3px 2px 3px 2px rgb(216, 209, 209);
+    text-align: justify;
+    width: 1550px;
+    height:200px;
+    z-index :3;
+    left:150px;
+    top:40px;
+
+}
