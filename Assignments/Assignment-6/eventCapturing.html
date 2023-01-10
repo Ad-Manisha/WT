@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event-Capturing</title>
+    <style>
+        h1{
+            text-align: center;
+            padding:2px;
+            word-spacing: 5px;
+            color:rgb(20, 17, 17);
+        }
+        body{
+            max-width:500px;
+            margin:23vh auto 0 auto;
+        }
+        div{
+            min-height:100px;
+            min-width:100px;
+            padding:50px;
+            border:2px solid rgb(124, 113, 113);
+            border-top-left-radius: 9px;
+            border-top-right-radius: 9px;
+            border-bottom-left-radius: 9px;
+            border-bottom-right-radius: 9px;
+        }
+        #grandParent{
+            background-color: rgb(206, 204, 197);
+            color:rgb(27, 29, 25);
+        }
+        #parent{
+            background-color: rgb(197, 233, 221);
+        }
+        #child{
+            background-color: rgb(212, 184, 238);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>EVENT CAPTURING</h1>
+    <div id="grandParent">GRAND-PARENT DIV
+        <div id="parent">PARENT DIV
+            <div id="child">CHILD DIV</div>   
+        </div>
+    </div>
+
+ <script src="eventCapturing.js"></script>
+</body>
+</html>
