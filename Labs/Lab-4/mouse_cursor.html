@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Cursor</title>
+</head>
+<body>
+    <label for="cursors">Choose any of these:</label>
+    <br>
+    <select name="cursors" id="cursors" onchange = "handleSelection(this)" size = "5">
+        <option value="cell">cell</option>
+        <option value="pointer">pointer</option>
+        <option value="default">default</option>
+        <option value="text">text</option>
+        <option value="move">move</option>
+    </select>
+    <br><br>
+
+    <script>
+        function handleSelection(x){
+            var whichSelected = x.selectedIndex;
+            document.body.style.cursor = x.options[whichSelected].text;
+        }
+    </script>
+</body>
+</html>

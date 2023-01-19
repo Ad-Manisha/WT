@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Load Events (JS)</title>
+    <style>
+        #image1{
+            width:700px;
+            height:500px;
+            position:absolute;
+            margin:auto;
+            top:0px;
+            right:0px;
+            bottom:0px;
+            left:0px;
+            border: 1px solid rgb(32, 31, 31);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+   <img id="image1" src="./assets/sunset.png" alt="sunset">
+
+   <script>
+        function handleDOMContentLoad(){
+            console.log("The DOM is fully Loaded !");
+        }
+        function handleLoad(){
+            console.log("The page is fully Loaded !");
+        }
+        window.addEventListener("DOMContentLoaded", handleDOMContentLoad);
+        window.addEventListener("load", handleLoad);
+   </script>
+</body>
+</html>

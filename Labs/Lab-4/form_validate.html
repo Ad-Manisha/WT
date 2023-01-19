@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        form{
+            border : 1.5px solid black;
+            width:200px;
+            background-color: rgb(77, 159, 161);
+            margin-top: 0em;
+            border-collapse: separate;
+            text-indent: initial;
+            border-spacing: 2px;
+            border-color: inherit; 
+        }
+        label, input,#country{
+            display:block;
+            margin-left: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        label{
+            margin-bottom: 8px;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <div id="error"></div>
+    <form action="#" id="form">
+        <div>
+            <label for="name">Name:</label>
+            <input id="name" name="name" type="text" onblur="handleOnBlur(this)">
+        </div>
+        <div>
+            <label for="userName">UserName:</label>
+            <input id="userName" name="userName" type="text" onblur="handleOnBlur(this)">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input id="password" name="password" type="password" onblur="handleOnBlur(this)">
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input id="email" name="email" type="email" onblur="handleOnBlur(this)">
+        </div>
+        <div>
+            <label for="countries">country:</label>
+            <select name="country" id="country" form="form">
+                <option value="cell">United States</option>
+                <option value="pointer">India</option>
+                <option value="default">Pakistan</option>
+                <option value="text"> Nepal</option>
+                <option value="move">Brazil</option>
+            </select>
+        </div>
+        <div>
+            <label for="email">Phone-Number:</label>
+            <input id="number" name="number" type="number" onblur="handleOnBlur(this)">
+        </div>
+        <br>
+        <input type="submit" id="submit">
+    </form>
+    <br>
+    <script>
+        let inputs = document.getElementsByTagName('input');
+        let name = document.getElementById('name');
+        let userName = document.getElementById('userName');
+        let password = document.getElementById('password');
+        let email = document.getElementById('email');
+        let form = document.getElementById('form');
+        let errorElement = document.getElementById('error');
+
+        function handleOnBlur(x){
+            x.style.color = "white";
+            x.style.backgroundColor = "gray";
+        }
+        form.addEventListener("submit", (e) => {
+            let messages = []
+            for(let i=0;i<6; i++)
+            if(inputs[i].value === ''|| inputs[i].value == null){
+                alert(i+"th field is required");
+            }
+            if(password.length <=6){
+                messages.push('passwor must be longer than 6 characters.');
+            }
+            if(password.length >=15){
+                messages.push('password must be shorter than 15 characters.');
+            }
+            if(messages.length > 0){
+                e.preventDefault();
+                errorElement.innerText = messages.join(',')
+            }
+           
+            alert('Congratulations ! Registered successfully '); 
+            
+        })
+    </script>
+</body>
+</html>
